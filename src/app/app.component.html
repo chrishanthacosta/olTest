@@ -1,0 +1,18 @@
+<header>
+  <div class="title">DigiGeo Online Maps</div>
+</header>
+<main>
+  <div class="left-bar"></div>
+   <div class="map-container">
+    <app-map [map]="map">
+
+    </app-map>
+
+   </div>
+     <div class="right-bar"></div>
+  <!-- <div id="ol-map" class="map-container"></div> -->
+</main>
+<footer>
+     <app-scaleline [map]="map"></app-scaleline>
+     <app-mouse-position [map]="map" positionTemplate="{x}, {y} m"></app-mouse-position>
+</footer>
